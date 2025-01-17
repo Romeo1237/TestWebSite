@@ -4,15 +4,15 @@ body
     font-family: Tahoma, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: blueviolet;
-    color: grey;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
 a
 {
     text-decoration: none;
-    color: grey;
+    color: rgb(0, 0, 0);
 }
 
 ul
@@ -30,7 +30,7 @@ h1, h2, h3
 
 header
 {
-    background-color: darkmagenta;
+    background-color: rgb(156, 156, 156);
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0.1);
 }
@@ -60,12 +60,119 @@ nav li
 nav a
 {
     text-decoration: none;
-    color: grey;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     text-transform: uppercase;
 }
 
 nav a:hover
 {
-    color: blueviolet;
+    color: rgb(156, 156, 156);
+}
+
+nav p
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+}
+
+#hero
+{
+    background-image:  url('ОбложкаЯВернулся.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#hero h1
+{
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+#hero p
+{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+}
+
+#hero .btn
+{
+    font-size: 18px;
+}
+
+#featuries
+{
+    padding: 50px;
+}
+
+#services
+{
+    padding: 50px;
+    background-color: rgb(206, 206, 206);
+}
+
+#services h2
+{
+    margin-bottom: 20px;
+}
+
+#services h3
+{
+    margin-bottom: 10px;
+}
+
+#services p
+{
+    margin-bottom: 30px;
+}
+
+#contact
+{
+    padding: 50px;
+}
+
+#contact h2
+{
+    margin-bottom: 20px;
+}
+
+#contact ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact li
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#contact p
+{
+    margin: 0;
+}
+
+#contact a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
 }
