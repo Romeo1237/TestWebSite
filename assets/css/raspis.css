@@ -231,6 +231,7 @@ body{
 
     border-radius: 1vh;
     background-color: #3d3f3e;
+    box-shadow: 0 4px 14px 10px rgba(0, 0, 0, 0.08);  
 }
 .calendar-head{
     display: grid;  
@@ -342,6 +343,8 @@ body{
     border-radius: 1vh;
     background-color: #385541;
     opacity: 0.8;
+
+    box-shadow: 0 4px 14px 10px rgba(0, 0, 0, 0.08); 
 }
 .next-event-name{
     display: grid;  
@@ -567,6 +570,37 @@ body{
         opacity: 1; 
     }
 }
+
+
+
+
+
+
+
+
+ .raspis-idet-hah{
+    position: absolute;
+    width: 100%;
+    height: 108vh;
+    top: 7%;
+    background-color: black;
+    opacity: 0.5;
+}
+.text-about-raspis-idet-nah{
+    position: absolute;
+    width: 20%;
+    height: 108vh;
+    top: 31%;
+    left: 43%;
+
+    font-family: 'Arial', sans-serif; 
+    font-size: 4vh;          
+    font-weight: 600;        
+    color: #ffffff;      
+    letter-spacing: 0.09vh;  
+} 
+
+
 
 
 
