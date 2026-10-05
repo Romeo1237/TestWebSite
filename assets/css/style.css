@@ -853,7 +853,8 @@ body{
     letter-spacing: 0.09vh;  
     align-content: start;
     text-align: center;
-    user-select: none;
+    user-select: none;    
+    text-decoration: none;   
 
     margin-top: -23%;
 }
@@ -878,6 +879,8 @@ body{
     letter-spacing: 0.09vh;  
     align-content: center;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
