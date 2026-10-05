@@ -853,8 +853,9 @@ body{
     letter-spacing: 0.09vh;  
     align-content: start;
     text-align: center;
+    user-select: none;
 
-    margin-top: -25%;
+    margin-top: -23%;
 }
 .ftn-gmail{
     font-family: 'Arial', sans-serif; 
@@ -869,7 +870,7 @@ body{
 }
 .ftn-adres-ebaniy{
     position: absolute;
-    top: 215%;
+    top: 230%;
     font-family: 'Arial', sans-serif; 
     font-size: 1.7vh;          
     font-weight: 600;        
@@ -903,27 +904,27 @@ body{
     justify-content: right;
     align-content:center;
     grid-template-columns:100%;
-    grid-template-rows: 100%;
+    grid-template-rows: 20%;
 
-    margin-top: -350%;
+    margin-top: -340%;
 }
 .logo-tg{
     display: grid;  
     justify-content: center;
     align-content:center;
     grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    grid-template-rows: 30%;
 
-    margin-top: -350%;
+    margin-top: -320%;
 }
 .logo-tiktok{
     display: grid;  
     justify-content: left;
     align-content:center;
     grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    grid-template-rows: 10%;
 
-    margin-top: -350%;
+    margin-top: -330%;
 }
 
 
