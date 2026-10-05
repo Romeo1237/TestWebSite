@@ -207,7 +207,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 
-    background-image: url('../img/bigobama.jpg'); 
+    background-image: url('../img/BIGsirniMihail.jpg'); 
     background-repeat: no-repeat;  
     background-position: center; 
     background-position: center;
@@ -239,12 +239,54 @@ body{
     align-content:center;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    background-image: url('../img/obama.png'); 
+}
+.foto1{
+    background-image: url('../img/ROMA.png'); 
     background-repeat: no-repeat;  
     background-position: center; 
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 95% 110%;
 }
+.foto2{
+    background-image: url('../img/ALEX.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 95% 110%;
+}
+.foto3{
+    background-image: url('../img/NNbabyla2.jpg'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 95% 100%;
+    border-radius: 1.3vh;
+}
+.foto4{
+    background-image: url('../img/KIRA.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 93% 110%;
+}
+.foto5{
+    background-image: url('../img/SOFA.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 97% 110%;
+}
+.foto6{
+    background-image: url('../img/ANDREW.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 85% 110%;
+}
+
+
+
+
 
 .text-cont{
     display: grid;
@@ -681,7 +723,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 
-    background-image: url('../img/tolobama.jpg'); 
+    background-image: url('../img/MINIsirniMihail.jpg'); 
     background-repeat: no-repeat;  
     background-position: center; 
     background-position: center;
@@ -707,18 +749,7 @@ body{
     align-content: center;
 
 }
-.photo-cont{
-    display: grid;  
-    justify-content: center;
-    align-content:center;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    background-image: url('../img/obama.png'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 100% 100%;
-}
+
 
 .text-cont{
     display: grid;

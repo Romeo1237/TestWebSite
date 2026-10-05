@@ -912,18 +912,7 @@ body{
     margin-top: -25%;
 }
 .ftn-adres-ebaniy{
-    position: absolute;
-    top: 140%;
-    font-family: 'Arial', sans-serif; 
-    font-size: 1.7vh;          
-    font-weight: 600;        
-    color: #a1a1a1;      
-    letter-spacing: 0.09vh;  
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3%;
+    display: none;
 }
 
 
