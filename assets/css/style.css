@@ -870,13 +870,13 @@ body{
 }
 .ftn-adres-ebaniy{
     position: absolute;
-    top: 230%;
+    top: 227%;
     font-family: 'Arial', sans-serif; 
     font-size: 1.7vh;          
     font-weight: 600;        
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
-    align-content: end;
+    align-content: center;
     text-align: center;
 }
 
@@ -904,9 +904,9 @@ body{
     justify-content: right;
     align-content:center;
     grid-template-columns:100%;
-    grid-template-rows: 20%;
+    grid-template-rows: 30%;
 
-    margin-top: -340%;
+    margin-top: -325%;
 }
 .logo-tg{
     display: grid;  
@@ -915,16 +915,16 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 30%;
 
-    margin-top: -320%;
+    margin-top: -325%;
 }
 .logo-tiktok{
     display: grid;  
     justify-content: left;
     align-content:center;
     grid-template-columns: 100%;
-    grid-template-rows: 10%;
+    grid-template-rows: 30%;
 
-    margin-top: -330%;
+    margin-top: -325%;
 }
 
 
