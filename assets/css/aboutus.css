@@ -652,7 +652,7 @@ body{
     
     /* 1. ГЛАВНЫЙ КОНТЕНЕР: сбрасываем огромные 520vh, даем расти по контенту */
     .container {
-        height: 1200vh;
+        height: auto;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto; /* Шапка и боди идут друг за другом */
@@ -992,7 +992,7 @@ body{
 }
 .ftn-adres-ebaniy{
     position: absolute;
-    top: 227%;
+    top: 1560%;
     font-family: 'Arial', sans-serif; 
     font-size: 1.7vh;          
     font-weight: 600;        

@@ -604,8 +604,437 @@ body{
 
 
 
-/* 
 
-.g{
-    border: 0.5px solid red;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================
+   НОРМАЛЬНЫЙ МЕДИА-ЗАПРОС ДЛЯ МОБИЛОК 
+   ====================================*/
+@media (max-width: 767px){
+    
+
+/* ОСНОВНОЙ КОНТЕЙНЕР, НАСТРОЙКИ ХЕДА, БОДИ И ФУТТЕРА*/
+
+.head-container{
+    /* background-color: #01702B; */
+    display: grid;
+    grid-template-columns:22% 56% 22%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    
+}
+
+
+
+
+/* НАСТРОЙКИ ХЕД КОНТЕЙНЕРА */
+.logo-container{
+    display: grid;
+    grid-template-columns:99% 1%;
+    grid-template-rows: 80%;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-container{
+    display: grid;
+    grid-template-columns:repeat(3, 30%);
+    grid-template-rows: 50%;
+    justify-content: center;
+    align-content: center;
+    gap: 1vh;
+}
+
+/* дом */
+.home-text{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns:50%;
+    grid-template-rows: 100%;
+
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.3vh;          
+    font-weight: 1000;        
+    color: #291818;      
+    letter-spacing: 0.03vh;
+    user-select: none; 
+}
+/* расписание */
+.btn-raspis{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 75%;
+    grid-template-rows: 100%;
+
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    font-size:1.3vh;          
+    font-weight: 1000;        
+    color: #291818;     
+    letter-spacing: 0.03vh;  
+    user-select: none;
+
+}
+
+ /* о нас */
+.btn-us{
+    display: grid;  
+    align-content:center;
+    grid-template-columns:90%;
+    grid-template-rows: 100%;
+
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.3vh;          
+    font-weight: 1000;        
+    color: #291818;       
+    letter-spacing: 0.03vh;  
+    user-select: none;
+    margin-left: 17%;
+}
+
+/* лого */
+.logo{
+    background-image: url('../img/logoparty.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 100% ;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* НАСТРОЙКИ БОДИ КОНТЕЙНЕРА */
+.body-text-container{
+    display: none;
+}
+
+.body-events-container{
+    display: none;
+}
+.events-calendar-container{
+    display: none;
+}
+.day-name-container{
+    display: none;
+}
+
+.next-events-container{
+   display: none;
+}
+
+
+
+
+
+.text-about-raspis-idet-nah{
+    position: absolute;
+    width: 80%;
+    height: 108vh;
+    top: 31%;
+    left:15%;
+
+    font-family: 'Arial', sans-serif; 
+    font-size: 4vh;          
+    font-weight: 600;        
+    color: #ffffff;      
+    letter-spacing: 0.09vh;  
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ФУТЕР */
+
+.footer-conteiner{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns:90%;
+    grid-template-rows: 30% 50%;
+    justify-content: center;
+    align-content: center;
+    background-color: #313332;
+}
+
+.foot-cont-one{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+
+    margin-top: 28%;
+}
+
+.foot-logo{
+    display: none;
+}
+.foot-logo-img{
+    display: none;
+}
+
+.foot-text-prava{
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.5vh;          
+    font-weight: 600;        
+    color: #a1a1a1;      
+    letter-spacing: 0.09vh;  
+    align-content: start;
+    text-align: center;
+    margin-top: 10%;
+}
+.foot-text-white{
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.6vh;          
+    font-weight: 600;        
+    color: #fdfdfd;      
+    letter-spacing: 0.09vh;  
+    text-align: center;
+}
+
+
+
+.foot-cont-two{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 35% 15%;
+}
+.foot-num{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 77%;
+}
+.foot-num-text{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 20%;
+
+    margin-top: -10%;
+}
+.fnt-white-num{
+    font-family: 'Arial', sans-serif; 
+    font-size: 2.5vh;          
+    font-weight: 800;        
+    color: #fdfdfd;      
+    letter-spacing: 0.09vh;  
+    align-content: start;
+    text-align: center;
+    user-select: none;    
+    text-decoration: none;   
+
+    margin-top: -23%;
+}
+.ftn-gmail{
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.7vh;          
+    font-weight: 600;        
+    color: #a1a1a1;      
+    letter-spacing: 0.09vh;  
+    align-content: start;
+    text-align: center;
+
+    margin-top: -25%;
+}
+.ftn-adres-ebaniy{
+    position: absolute;
+    top: 140%;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.7vh;          
+    font-weight: 600;        
+    color: #a1a1a1;      
+    letter-spacing: 0.09vh;  
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+}
+
+
+
+.foot-info-text{
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.3vh;          
+    font-weight: 600;        
+    color: #a1a1a1;      
+    letter-spacing: 0.09vh;  
+    margin-top: 5%;
+    text-align: center;
+    margin-top: 10%;
+}
+.foot-info{
+    display: grid;  
+    justify-content:  center;
+    align-content:center;
+    grid-template-columns: repeat(3, 12%);
+    grid-template-rows: 100%;
+}
+.logo-max{
+    display: grid;  
+    justify-content: right;
+    align-content:center;
+    grid-template-columns:100%;
+    grid-template-rows: 30%;
+
+    margin-top: -325%;
+}
+.logo-tg{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 30%;
+
+    margin-top: -325%;
+}
+.logo-tiktok{
+    display: grid;  
+    justify-content: left;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 30%;
+
+    margin-top: -325%;
+}
+
+
+
+.img-max{
+    background-image: url('../img/maxlogo.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 80%;
+    opacity: 0.70; 
+    transition: opacity 0.4s ease;
+    &:hover {
+        opacity: 1; 
+    }
+}
+.img-tg{
+    background-image: url('../img/tglogo.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 80%;
+    opacity: 0.70; 
+    transition: opacity 0.4s ease;
+    &:hover {
+        opacity: 1; 
+    }
+}
+.img-tiktok{
+    background-image: url('../img/tiktoklogo.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 75%;
+    opacity: 0.70; 
+    transition: opacity 0.4s ease;
+    &:hover {
+        opacity: 1; 
+    }
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (1600px <= width <= 1900px){
+}
