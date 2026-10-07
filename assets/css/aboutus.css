@@ -1021,7 +1021,7 @@ body{
     grid-template-columns:100%;
     grid-template-rows: 30%;
 
-    margin-top: -325%;
+    margin-top: -315%;
 }
 .logo-tg{
     display: grid;  
@@ -1030,7 +1030,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 30%;
 
-    margin-top: -325%;
+    margin-top: -315%;
 }
 .logo-tiktok{
     display: grid;  
@@ -1039,7 +1039,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 30%;
 
-    margin-top: -325%;
+    margin-top: -315%;
 }
 
 
@@ -1079,6 +1079,54 @@ body{
     &:hover {
         opacity: 1; 
     }
+}
+
+/* ХОВЕРЫ НА ХЕД */
+.line-red-home{
+    width: 6%;
+    height: 0.5vh;
+    position: absolute;
+    margin-top: 0.2%;
+    margin-left: 3.1%;
+    background-color: rgb(219, 0, 0);
+
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+.home-text:hover + .line-red-home {
+  opacity: 0;
+}
+
+
+.line-red-raspis{
+    width: 8%;
+    height: 0.5vh;
+    position: absolute;
+    margin-top: 1.6%;
+    margin-left: 0.4%;
+    background-color: rgb(219, 0, 0);
+
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+.raspis-text:hover + .line-red-raspis {
+  opacity: 0;
+}
+
+
+.line-red-aboutus{
+    width: 4%;
+    height: 0.5vh;
+    position: absolute;
+    margin-top: 1.6%;
+    margin-left: 0.5%;
+    background-color: rgb(219, 0, 0);
+
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+.aboutus-text:hover + .line-red-aboutus {
+  opacity: 0;
 }
 
 }
