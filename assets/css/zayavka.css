@@ -7,12 +7,12 @@ body{
 /* ОСНОВНОЙ КОНТЕЙНЕР, НАСТРОЙКИ ХЕДА, БОДИ И ФУТТЕРА*/
 .container{
     width: 100%;
-    height: 295vh;
+    height: 97vh;
     background-color:  #edfaed ;
 
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows: 2.05% 97.95%;
+    grid-template-rows: 6.3% 93.7%;
 }
 
 .head-container{
@@ -21,19 +21,13 @@ body{
     grid-template-columns:repeat(3, 33%);
     grid-template-rows: 100%;
     justify-content: center;
-
-    background-image: url('../img/headbg.jpg'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size:100%;
-    
+    background-color: white;
 }
 
 .body-container{
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows: 30% 30% 39%;
+    grid-template-rows: 95%;
     justify-content: center;
 }
 
@@ -70,6 +64,9 @@ body{
 }
 
 /* дом */
+.btn-home{
+    text-decoration: none;
+}
 .home-text{
     display: grid;  
     justify-content: right;
@@ -82,8 +79,8 @@ body{
     font-size: 2vh;          
     font-weight: 1000;        
     color: #291818;      
-    letter-spacing: 0.03vh;
-    user-select: none; 
+    letter-spacing: 0.03vh; 
+    user-select: none;
 }
 /* расписание */
 .btn-raspis{
@@ -137,7 +134,7 @@ body{
     height: 0.5vh;
     position: absolute;
     margin-top: 0.2%;
-    margin-left: 3.1%;
+    margin-left: 4.4%;
     background-color: rgb(219, 0, 0);
 
     opacity: 0; 
@@ -190,193 +187,91 @@ body{
 
 
 
+/* НАСТРОЙКИ БОДИ КОНТЕЙНЕРА */
+.forma-container{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 47%;
+    grid-template-rows: 75% 15%;
+    gap: 1.5vh;
+}
+.forma-mini-cont{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 90%;
+    grid-template-rows: 7% 85%;
+    gap: 0.5vh;
 
-/* НАСТРОЙКИ БОДИ КОНТЕЙНЕРА  */
-.vlv{
-    /* background-color: #ffffff; */
-    border-radius: 2vh;
-    box-shadow: 0 4px 12px 0 rgba(28, 51, 35, 0.08); 
     background-color: white;
+    border-radius: 2vh;
+    box-shadow: 0 4px 10px 7px rgba(0, 0, 0, 0.08); 
 }
-
-
-.bigfoto-container{
+.oglav-forma{
     display: grid;  
     justify-content: center;
     align-content:center;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 
-    background-image: url('../img/BIGsirniMihail.jpg'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 100% 100%;
-    background-color: #39D674;
-}
-
-
-
-.info-container{
-    display: grid;
-    grid-template-columns:repeat(2, 32.41%);
-    grid-template-rows: repeat(3, 26%);
-    justify-content: center;
-    align-content: center;
-    gap: 1.3vh;
-}
-.info-card{
-    display: grid;
-    grid-template-columns:30% 70%;
-    grid-template-rows:95%;
-    justify-content: center;
-    align-content: center;
-
-}
-.photo-cont{
-    display: grid;  
-    justify-content: center;
-    align-content:center;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-}
-.foto1{
-    background-image: url('../img/ROMA.png'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 95% 110%;
-}
-.foto2{
-    background-image: url('../img/ALEX.png'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 95% 110%;
-}
-.foto3{
-    background-image: url('../img/NNbabyla2.jpg'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 95% 100%;
-    border-radius: 1.3vh;
-}
-.foto4{
-    background-image: url('../img/KIRA.png'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 93% 110%;
-}
-.foto5{
-    background-image: url('../img/SOFA.png'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 97% 110%;
-}
-.foto6{
-    background-image: url('../img/ANDREW.png'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 85% 110%;
-}
-
-
-
-
-
-.text-cont{
-    display: grid;
-    grid-template-columns:95%;
-    grid-template-rows:90%;
-    justify-content: center;
-    align-content: center;
-}
-.name-cont{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows:45% 55%;
-    justify-content: center ;
-    align-content: center;
-}
-
-
-/* настройка текста */
-.name{
     font-family: 'Arial', sans-serif; 
     font-size: 3vh;          
-    font-weight: 1000;     
-    color: black;        
-    letter-spacing: 0.03vh;  
-    line-height: 0.97;
-    align-content: end;
-    user-select: none;
-}
-.name-text{
-    font-family: 'Arial', sans-serif; 
-    font-size: 1.3vh;          
     font-weight: 600;        
-    color: #2c312e;      
-    letter-spacing: 0.03vh;  
-    margin-top: 2%;
-    user-select: none;
+    color: #303030;      
+    letter-spacing: 0.09vh;  
+    align-items: center;
+    text-align: center;
 }
-
-
-.video-container{
-    display: grid;  
-    justify-content: center;
-    align-content:center;
-    grid-template-columns: 100%;
-    grid-template-rows: 13% 5% 82%;
-}
-.baner-cont{
+.text-forma{
     display: grid;  
     justify-content: center;
     align-content:center;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 
-    background-image: url('../img/baner.jpg'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 100% 100%;
+    font-family: 'Arial', sans-serif; 
+    font-size: 2.7vh;          
+    font-weight: 600;        
+    color: #303030;      
+    letter-spacing: 0.09vh;  
+    align-items: center;
+    text-align: left;
 }
-.video-cont{
-    display: grid;  
-    justify-content: center;
-    align-content:center;
-    grid-template-columns: 60%;
-    grid-template-rows: 80%;
-}
-.text-video{
-    display: grid;  
-    justify-content: center;
-    align-content:center;
-    grid-template-columns: 60%;
-    grid-template-rows: 20%;
-    margin-top: 5%;
 
+.zauavk-container{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    user-select: none;
+    text-decoration: none;
+}
+.btn-zauavk-container{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    border-radius: 2vh;
+    background-color: white;
+    box-shadow: 0 4px 10px 7px rgba(0, 0, 0, 0.08); 
 
     font-family: 'Arial', sans-serif; 
     font-size: 4vh;          
     font-weight: 600;        
-    color: #202020;      
+    color: #303030;      
     letter-spacing: 0.09vh;  
-    align-content: end;
+    align-items: center;
+    text-align: center;
+    user-select: none;
 }
-.video{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    display: block;
-}
+
+
+
 
 
 
@@ -491,7 +386,7 @@ body{
     font-weight: 600;        
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
-    margin-top: 5%;
+    margin-top: 5%; 
 }
 .foot-info{
     display: grid;  
@@ -580,6 +475,44 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ====================================
    НОРМАЛЬНЫЙ МЕДИА-ЗАПРОС ДЛЯ МОБИЛОК 
    ====================================*/
@@ -587,17 +520,6 @@ body{
     
 
 /* ОСНОВНОЙ КОНТЕЙНЕР, НАСТРОЙКИ ХЕДА, БОДИ И ФУТТЕРА*/
-.container{
-    width: 100%;
-    height: 240vh;
-    background-color:  #edfaed ;
-
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 3% 97%;
-
-    
-}
 
 .head-container{
     /* background-color: #01702B; */
@@ -605,27 +527,13 @@ body{
     grid-template-columns:22% 56% 22%;
     grid-template-rows: 100%;
     justify-content: center;
-
-    background-image: url('../img/headbg.jpg'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size:100% 100%;
     
 }
 
-.body-container{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 37% 45% 18%;
-    justify-content: center;
-}
 
 
 
-
-
-/* НАСТРОЙКИ ХЕД КОНТЕЙНЕРА */
+/* НАСТРОЙКИ ХЕД КОНТЕЙНЕРА
 .logo-container{
     display: grid;
     grid-template-columns:99% 1%;
@@ -763,133 +671,104 @@ body{
 
 
 
+/* НАСТРОЙКИ БОДИ КОНТЕЙНЕРА */
+.container{
+    width: 100%;
+    height: 80vh;
+    background-color:  #edfaed ;
 
-/* НАСТРОЙКИ БОДИ КОНТЕЙНЕРА  */
-
-.bigfoto-container{
-    display: grid;  
-    justify-content: center;
-    align-content:center;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-
-    background-image: url('../img/MINIsirniMihail.jpg'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 100% 100%;
-    background-color: #39D674;
-}
-
-
-
-.info-container{
-    display: grid;
-    grid-template-columns:80%;
-    grid-template-rows: repeat(6, 15%);
-    justify-content: center;
-    align-content: center;
-    gap: 1.3vh;
-}
-.info-card{
-    display: grid;
-    grid-template-columns:30% 70%;
-    grid-template-rows:95%;
-    justify-content: center;
-    align-content: center;
-
-}
-
-
-.text-cont{
-    display: grid;
-    grid-template-columns:95%;
-    grid-template-rows:90%;
-    justify-content: center;
-    align-content: center;
-}
-.name-cont{
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows:45% 55%;
-    justify-content: center ;
-    align-content: center;
+    grid-template-rows: 6.3% 93.7%;
 }
 
-
-/* настройка текста */
-.name{
-    font-family: 'Arial', sans-serif; 
-    font-size: 2.1vh;          
-    font-weight: 1000;     
-    color: black;        
-    letter-spacing: 0.03vh;  
-    line-height: 0.97;
-    align-content: end;
-    user-select: none;
-}
-.name-text{
-    font-family: 'Arial', sans-serif; 
-    font-size: 1.2vh;          
-    font-weight: 600;        
-    color: #2c312e;      
-    letter-spacing: 0.03vh;  
-    margin-top: 2%;
-    user-select: none;
-}
-
-
-
-
-
-.video-container{
+.forma-container{
     display: grid;  
     justify-content: center;
     align-content:center;
-    grid-template-columns: 100%;
-    grid-template-rows: 19% 3% 80%;
+    grid-template-columns:70%;
+    grid-template-rows: 70% 15%;
+    gap: 1.5vh;
 }
-.baner-cont{
+.forma-mini-cont{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 90%;
+    grid-template-rows: 7% 85%;
+    gap: 0.5vh;
+
+    background-color: white;
+    border-radius: 2vh;
+    box-shadow: 0 4px 10px 7px rgba(0, 0, 0, 0.08); 
+}
+.oglav-forma{
     display: grid;  
     justify-content: center;
     align-content:center;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 
-    background-image: url('../img/baner.jpg'); 
-    background-size: 210% 110%;
+    font-family: 'Arial', sans-serif; 
+    font-size: 2vh;          
+    font-weight: 600;        
+    color: #303030;      
+    letter-spacing: 0.09vh;  
+    align-items: center;
+    text-align: center;
 }
-.video-cont{
+.text-forma{
     display: grid;  
     justify-content: center;
     align-content:center;
-    grid-template-columns: 70%;
-    grid-template-rows: 80%;
-}
-.text-video{
-    display: grid;  
-    justify-content: center;
-    align-content:center;
-    grid-template-columns: 70%;
-    grid-template-rows: 20%;
-    margin-top: 5%;
-
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
 
     font-family: 'Arial', sans-serif; 
-    font-size: 1.3vh;          
+    font-size: 1.5vh;          
     font-weight: 600;        
-    color: #202020;      
+    color: #303030;      
     letter-spacing: 0.09vh;  
-    align-content: end;
+    align-items: center;
+    text-align: left;
 }
-.video{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    display: block;
+
+.zauavk-container{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    user-select: none;
+    text-decoration: none;
 }
+.btn-zauavk-container{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    border-radius: 2vh;
+    background-color: white;
+    box-shadow: 0 4px 10px 7px rgba(0, 0, 0, 0.08); 
+
+    font-family: 'Arial', sans-serif; 
+    font-size: 3svh;          
+    font-weight: 600;        
+    color: #303030;      
+    letter-spacing: 0.09vh;  
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+
+
+
+
+
 
 
 
@@ -1088,6 +967,11 @@ body{
         opacity: 1; 
     }
 }
+
+
+
+
+
 
 
 }
