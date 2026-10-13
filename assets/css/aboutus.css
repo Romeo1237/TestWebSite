@@ -4,19 +4,18 @@ body{
 }
 
 
-/* ОСНОВНОЙ КОНТЕЙНЕР, НАСТРОЙКИ ХЕДА, БОДИ И ФУТТЕРА*/
-.container{
+/* ОСНОВНОЙ КОНТЕЙНЕР, НАСТРОЙКИ ХЕДА И ФУТТЕРА*/
+.head-container{
     width: 100%;
-    height:520vh;
-    background-color:  #edfaed ;
-
+    height: 20%;
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows: 1.17% 98.83%;
+    grid-template-rows: 100%;
+    justify-content: center;
 }
-
-.head-container{
-    /* background-color: #01702B; */
+.head-mini-cont{
+    width: 100%;
+    height: 6vh;
     display: grid;
     grid-template-columns:repeat(3, 33%);
     grid-template-rows: 100%;
@@ -24,14 +23,15 @@ body{
     background-color: white;
 }
 
-.body-container{
-    display: grid;
-    grid-template-columns:40% 60%;
-    grid-template-rows: 100%;
-    justify-content: center;
-    align-content: center;
-}
+.container{
+    width: 100%;
+    height:590vh;
+    background-color:  #edfaed ;
 
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 100%;
+}
 .footer-conteiner{
     width: 100%;
     height: 40vh;
@@ -186,6 +186,13 @@ body{
 
 
 /* НАСТРОЙКИ БОДИ КОНТЕЙНЕРА */
+.body-container{
+    display: grid;
+    grid-template-columns:40% 60%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-content: center;
+}
 .oglavl-container{
     display: grid;  
     justify-content: center;
@@ -347,13 +354,13 @@ body{
     justify-content: center;
     align-content:center;
     grid-template-columns: 100%;
-    margin-top: -15%;
+    margin-top: -3%;
 
     overflow-wrap: anywhere;
     word-break: break-word;
     white-space: normal; 
-    white-space: pre-line
-
+    white-space: pre-line;
+    font-size: 1.7vh;                
 }
 
 .bold-text{
@@ -650,60 +657,149 @@ body{
    ========================================================================== */
 @media screen and (max-width: 768px) {
     
-    /* 1. ГЛАВНЫЙ КОНТЕНЕР: сбрасываем огромные 520vh, даем расти по контенту */
+    /* ГЛАВНЫЙ КОНТЕЙНЕР, ХЕД И ФУТЕР */
     .container {
-        height: auto;
+        height: 100%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto; /* Шапка и боди идут друг за другом */
+        grid-template-rows:100%; 
     }
-
-    /* 2. НАСТРОЙКИ ХЕДЕРА: Логотип и меню выстраиваем в одну колонку */
-    .head-container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-        gap: 2vh;
-        padding: 2vh 0;
+    .head-container{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 100%;
+    justify-content: center;
+   }
+   .head-mini-cont{
+    width: 100%;
+    height: 7vh;
+    display: grid;
+    grid-template-columns:40% 60%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    background-color: white;
     }
+/*НАСТРОЙКИ ХЕДЕРА*/
+   .forsetc-mobile{
+    display: none;
+}
+.logo-container{
+    display: grid;
+    grid-template-columns:99% 1%;
+    grid-template-rows: 80%;
+    justify-content: center;
+    align-content: center;
+}
 
-    .logo-container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-content: center;
-    }
+.btn-container{
+    display: grid;
+    grid-template-columns:repeat(3, 30%);
+    grid-template-rows: 50%;
+    justify-content: center;
+    align-content: center;
+    gap: 1vh;
+}
+.home-text{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns:50%;
+    grid-template-rows: 100%;
 
-    .logo {
-        width: 150px; /* Фиксируем размер логотипа на телефоне */
-        height: 50px;
-        margin: 0 auto;
-        background-size: contain;
-    }
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.3vh;          
+    font-weight: 1000;        
+    color: #291818;      
+    letter-spacing: 0.03vh;
+    user-select: none; 
+}
+.btn-raspis{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 75%;
+    grid-template-rows: 100%;
 
-    /* Кнопки меню: делим на 3 равные фракции в одну горизонтальную строчку */
-    .btn-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 1vh;
-        width: 90vw;
-        margin: 0 auto;
-    }
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    font-size:1.3vh;          
+    font-weight: 1000;        
+    color: #291818;     
+    letter-spacing: 0.03vh;  
+    user-select: none;
 
-    .home-text, .btn-raspis, .btn-us {
-        font-size: 1.8vh; /* Чуть уменьшаем шрифт для мобилки */
-        justify-content: center;
-        text-align: center;
-    }
+}
+.btn-us{
+    display: grid;  
+    align-content:center;
+    grid-template-columns:90%;
+    grid-template-rows: 100%;
 
-    /* Прячем линии-подчеркивания на мобилках, чтобы они не летали по экрану отдельно от ссылок */
-    .line-red-home, .line-red-raspis, .line-red-aboutus {
-        display: none;
-    }
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.3vh;          
+    font-weight: 1000;        
+    color: #291818;       
+    letter-spacing: 0.03vh;  
+    user-select: none;
+    margin-left: 17%;
+}
+.logo{
+    background-image: url('../img/logoparty.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 100% ;
+} 
+.line-red-home{
+    width: 6%;
+    height: 0.5vh;
+    position: absolute;
+    margin-top: 0.2%;
+    margin-left: 3.1%;
+    background-color: rgb(219, 0, 0);
 
-    /* 3. НАСТРОЙКИ БОДИ КОНТЕЙНЕРА: переводим в одну колонку */
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+.home-text:hover + .line-red-home {
+  opacity: 0;
+}
+
+
+.line-red-raspis{
+    width: 8%;
+    height: 0.5vh;
+    position: absolute;
+    margin-top: 1.6%;
+    margin-left: 0.4%;
+    background-color: rgb(219, 0, 0);
+
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+.raspis-text:hover + .line-red-raspis {
+  opacity: 0;
+}
+
+
+.line-red-aboutus{
+    width: 4%;
+    height: 0.5vh;
+    position: absolute;
+    margin-top: 1.6%;
+    margin-left: 0.5%;
+    background-color: rgb(219, 0, 0);
+
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+.aboutus-text:hover + .line-red-aboutus {
+  opacity: 0;
+}
+
+    /*НАСТРОЙКИ БОДИ*/
     .body-container {
         display: grid;
         grid-template-columns: 100%;
@@ -711,8 +807,6 @@ body{
         padding: 2vh 4vw;
         gap: 3vh;
     }
-
-    /* ОГЛАВЛЕНИЕ: Отменяем fixed, чтобы оно не перекрывало текст на телефоне */
     .oglavl-container {
         display: grid;
         grid-template-columns: 100%;
@@ -721,7 +815,7 @@ body{
     }
 
     .oglavl-mini-container {
-        position: static; /* Оглавление теперь послушно встает НАД текстом */
+        position: static;
         width: 100%;
         height: auto;
         display: grid;
@@ -744,7 +838,7 @@ body{
 
     .text-oglavl {
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto; /* Ссылки идут блоками друг под другом */
+        grid-template-rows: auto auto auto; 
         gap: 1.5vh;
     }
 
@@ -752,14 +846,10 @@ body{
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }
-
-    /* Сдвиги для подразделов 2.1 и 2.2 делаем более аккуратными */
     .two-text {
         padding-left: 4vw;
         justify-content: left;
     }
-
-    /* 4. ТЕКСТОВАЯ ИНФОРМАЦИЯ: Растягиваем на всю ширину экрана смартфона */
     .info-container {
         display: grid;
         grid-template-columns: 100%;
@@ -775,13 +865,11 @@ body{
         grid-template-columns: 100%;
         padding: 3vh 4vw;
     }
-
-    /* ЖЕЛЕЗОБЕТОННЫЙ АВТОПЕРЕНОС ТЕКСТА */
     .info-text {
-        margin-top: 0; /* Убираем дикий комповский отрицательный маргин */
+        margin-top: 0; 
         font-size: 1.9vh;
         line-height: 1.5;
-        text-align: justify; /* Чтобы текст Народной программы смотрелся дорого */
+        text-align: justify; 
         overflow-wrap: anywhere;
         word-break: break-word;
         white-space: pre-line;
@@ -789,17 +877,15 @@ body{
 
     .bold-text {
         font-size: 2vh;
-        text-align: center; /* Заголовки разделов по центру экрана */
+        text-align: center; 
         margin-top: 2vh;
         margin-bottom: 1vh;
     }
 
     .bold-one {
-        margin-left: 0; /* Сбрасываем жесткий сдвиг влево */
+        margin-left: 0;
         text-align: center;
     }
-
-    /* 5. ФУТЕР: Грид в одну колонку, высота подстраивается автоматически */
     .footer-conteiner {
         height: auto;
         display: grid;
@@ -895,7 +981,7 @@ body{
 /* ФУТЕР */
 
 .footer-conteiner{
-    width: 100%;
+    width: 92%;
     height: 40vh;
     display: grid;
     grid-template-columns:90%;
@@ -977,7 +1063,7 @@ body{
     user-select: none;    
     text-decoration: none;   
 
-    margin-top: -23%;
+    margin-top: -32%;
 }
 .ftn-gmail{
     font-family: 'Arial', sans-serif; 
@@ -988,7 +1074,7 @@ body{
     align-content: start;
     text-align: center;
 
-    margin-top: -25%;
+    margin-top: -31%;
 }
 .ftn-adres-ebaniy{
     display: none;
@@ -1021,7 +1107,7 @@ body{
     grid-template-columns:100%;
     grid-template-rows: 30%;
 
-    margin-top: -315%;
+    margin-top: -380%;
 }
 .logo-tg{
     display: grid;  
@@ -1030,7 +1116,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 30%;
 
-    margin-top: -315%;
+    margin-top: -380%;
 }
 .logo-tiktok{
     display: grid;  
@@ -1039,7 +1125,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 30%;
 
-    margin-top: -315%;
+    margin-top: -380%;
 }
 
 
